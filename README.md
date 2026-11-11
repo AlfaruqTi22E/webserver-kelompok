@@ -1,109 +1,126 @@
-Web Server Kelompok 1
+# Web Server Kelompok 1
 
-Project Tugas Mata Kuliah Pemrograman Berbasis Platform Web
+Proyek ini merupakan tugas kelompok mata kuliah **Pemrograman Berbasis Platform Web**. Aplikasi dikembangkan menggunakan Node.js dan Express.js untuk membuat web server sederhana yang menampilkan informasi identitas kelompok, anggota, dan mata kuliah.
 
-Web Server Kelompok 1 adalah aplikasi web sederhana yang dikembangkan menggunakan Node.js dan Express.js. Aplikasi ini menampilkan informasi kelompok, identitas mata kuliah, daftar anggota, serta menyediakan endpoint API yang mengembalikan data kelompok dalam format JSON.
+## Deskripsi Proyek
 
-📌 Informasi Proyek
+Web Server Kelompok 1 merupakan aplikasi berbasis web yang menyediakan beberapa halaman informasi dan endpoint API. Aplikasi ini dibuat sebagai penerapan materi Node.js dan Express.js.
 
-Keterangan| Informasi
-Nama Kelompok| Kelompok 1
-Kelas| TI25G
-Program Studi| Teknik Informatika
-Universitas| Universitas Nusa Putra
-Mata Kuliah| Pemrograman Berbasis Platform Web
-Dosen Pengampu| Shintya Ayuningtias, M.Kom
-Materi| Node.js dan Express.js
-Semester| 3
+## Teknologi yang Digunakan
 
-👥 Anggota Kelompok
+- **Node.js** sebagai runtime JavaScript.
+- **Express.js** sebagai framework web server.
+- **HTML** untuk struktur halaman.
+- **CSS** untuk tampilan antarmuka.
+- **JSON** untuk format data API.
 
-No.| Nama| NIM
-1| Abu Nur Al-Faruq| 20220040223
-2| Abdul Wahab Rohmatullah| 20250040181
-3| Adam Rifaldi| 20250040134
-4| Adinda Anggraena Saputri| 20250040014
+## Identitas Kelompok
 
-🛠️ Teknologi yang Digunakan
+| Keterangan | Informasi |
+|---|---|
+| Kelompok | Kelompok 1 |
+| Kelas | TI25G |
+| Program Studi | Teknik Informatika |
+| Universitas | Universitas Nusa Putra |
 
-- Node.js sebagai runtime JavaScript untuk menjalankan server.
-- Express.js sebagai framework untuk mengelola server dan routing.
-- JavaScript sebagai bahasa pemrograman.
-- HTML untuk menyusun struktur halaman.
-- CSS untuk mengatur tampilan halaman web.
-- npm untuk mengelola dependensi proyek.
+## Anggota Kelompok
 
-🚀 Fitur dan Endpoint
+| No. | Nama | NIM |
+|---|---|---|
+| 1 | Abu Nur Al-Faruq | 20220040223 |
+| 2 | Abdul Wahab Rohmatullah | 20250040181 |
+| 3 | Adam Rifaldi | 20250040134 |
+| 4 | Adinda Anggraena Saputri | 20250040014 |
 
-Aplikasi menyediakan beberapa endpoint dengan metode GET:
+## Informasi Mata Kuliah
 
-Method| Endpoint| Fungsi
-GET| "/"| Mengarahkan pengguna ke halaman beranda.
-GET| "/beranda"| Menampilkan halaman sambutan.
-GET| "/identitas"| Menampilkan identitas kelompok.
-GET| "/matkul"| Menampilkan informasi mata kuliah.
-GET| "/anggota"| Menampilkan daftar anggota kelompok.
-GET| "/tentang"| Menampilkan informasi website.
-GET| "/api/kelompok"| Menampilkan data kelompok dalam format JSON.
+| Keterangan | Informasi |
+|---|---|
+| Mata Kuliah | Pemrograman Berbasis Platform Web |
+| Dosen Pengampu | Shintya Ayuningtias, M.Kom |
+| Materi | Node.js dan Express.js |
+| Semester | 3 |
 
-Aplikasi juga memiliki penanganan 404 Not Found untuk alamat atau endpoint yang tidak tersedia.
+## Fitur dan Routing
 
-📂 Struktur Folder
+Aplikasi memiliki beberapa route yang dapat diakses melalui browser.
 
+| Method | Endpoint | Keterangan |
+|---|---|---|
+| GET | `/` | Mengarahkan pengguna ke halaman beranda |
+| GET | `/beranda` | Menampilkan halaman utama |
+| GET | `/identitas` | Menampilkan identitas kelompok |
+| GET | `/matkul` | Menampilkan informasi mata kuliah |
+| GET | `/anggota` | Menampilkan daftar anggota kelompok |
+| GET | `/tentang` | Menampilkan informasi tentang proyek |
+| GET | `/api/kelompok` | Menampilkan data kelompok dalam format JSON |
+
+Aplikasi juga menyediakan halaman **404 Not Found** untuk menangani alamat atau route yang tidak ditemukan.
+
+## Struktur Folder
+
+```text
 webserver-kelompok/
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 ├── server.js
 └── README.md
+```
 
-💻 Cara Menjalankan Proyek
+## Instalasi dan Menjalankan Aplikasi
 
 Pastikan Node.js dan npm sudah terpasang di komputer.
 
-1. Clone repository
+**1. Clone repository**
 
+```bash
 git clone https://github.com/AlfaruqTi22E/webserver-kelompok.git
+```
 
-2. Masuk ke direktori proyek
+**2. Masuk ke direktori proyek**
 
+```bash
 cd webserver-kelompok
+```
 
-3. Install dependencies
+**3. Install dependencies**
 
+```bash
 npm install
+```
 
-4. Jalankan server
+**4. Jalankan server**
 
+```bash
 npm start
+```
 
-5. Buka aplikasi di browser
+Jika server berhasil dijalankan, buka browser dan akses:
 
+```text
 http://localhost:3000
+```
 
-Jika server berhasil dijalankan, aplikasi dapat diakses melalui alamat tersebut.
+## Pengujian Endpoint
 
-🧪 Pengujian Endpoint
+Beberapa endpoint yang dapat diuji melalui browser:
 
-Setelah server aktif, setiap endpoint dapat diuji melalui browser menggunakan alamat berikut:
+- Halaman utama: `http://localhost:3000/beranda`
+- Identitas kelompok: `http://localhost:3000/identitas`
+- Informasi mata kuliah: `http://localhost:3000/matkul`
+- Daftar anggota: `http://localhost:3000/anggota`
+- Tentang proyek: `http://localhost:3000/tentang`
+- API kelompok: `http://localhost:3000/api/kelompok`
 
-- http://localhost:3000/beranda
-- http://localhost:3000/identitas
-- http://localhost:3000/matkul
-- http://localhost:3000/anggota
-- http://localhost:3000/tentang
-- http://localhost:3000/api/kelompok
+## Repository
 
-Pengujian dilakukan untuk memastikan setiap halaman menampilkan informasi sesuai fungsinya dan endpoint API mengembalikan data kelompok dalam format JSON.
+Source code proyek dapat diakses melalui GitHub:
 
-🔗 Repository
-
-Source code dan dokumentasi proyek tersedia di GitHub:
-
-"AlfaruqTi22E/webserver-kelompok" (https://github.com/AlfaruqTi22E/webserver-kelompok)
+[Web Server Kelompok 1](https://github.com/AlfaruqTi22E/webserver-kelompok)
 
 ---
 
-Universitas Nusa Putra
-Program Studi Teknik Informatika
-Mata Kuliah Pemrograman Berbasis Platform Web
+**Universitas Nusa Putra**  
+**Program Studi Teknik Informatika**  
+**2026**
