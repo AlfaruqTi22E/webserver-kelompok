@@ -1,123 +1,109 @@
 Web Server Kelompok 1
 
-Project Tugas Pemrograman Berbasis Platform Web
+Project Tugas Mata Kuliah Pemrograman Berbasis Platform Web
 
-1. Deskripsi Proyek
+Web Server Kelompok 1 adalah aplikasi web sederhana yang dikembangkan menggunakan Node.js dan Express.js. Aplikasi ini menampilkan informasi kelompok, identitas mata kuliah, daftar anggota, serta menyediakan endpoint API yang mengembalikan data kelompok dalam format JSON.
 
-Web Server Kelompok 1 merupakan proyek tugas mata kuliah Pemrograman Berbasis Platform Web. Website ini dikembangkan menggunakan Node.js dan Express.js untuk menampilkan informasi kelompok, identitas mata kuliah, daftar anggota, serta informasi website melalui beberapa endpoint (route).
+📌 Informasi Proyek
 
-2. Teknologi yang Digunakan
-
-- Node.js: Runtime JavaScript untuk menjalankan server.
-- Express.js: Framework untuk mengelola server dan routing.
-- JavaScript: Bahasa pemrograman yang digunakan.
-- HTML: Membuat struktur halaman website.
-- CSS: Mengatur tampilan dan desain website.
-
-3. Identitas Kelompok
-
-Keterangan Informasi
-Nama Kelompok Kelompok 1
-Kelas TI25G
-Program Studi Teknik Informatika
-Universitas Universitas Nusa Putra
-
-4. Daftar Anggota Kelompok
-
-No. Nama NIM
-1 Abu Nur Al-Faruq 20220040223
-2 Abdul Wahab Rohmatullah 20250040181
-3 Adam Rifaldi 20250040134
-4 Adinda Anggraena Saputri 20250040014
-
-5. Identitas Mata Kuliah
-
-Keterangan Informasi
-Mata Kuliah Pemrograman Berbasis Platform Web
-Dosen Pengampu Shintya Ayuningtias, M.Kom
-Materi Node.js dan Express.js
+Keterangan| Informasi
+Nama Kelompok| Kelompok 1
+Kelas| TI25G
+Program Studi| Teknik Informatika
+Universitas| Universitas Nusa Putra
+Mata Kuliah| Pemrograman Berbasis Platform Web
+Dosen Pengampu| Shintya Ayuningtias, M.Kom
+Materi| Node.js dan Express.js
 Semester| 3
 
-6. Daftar Endpoint (Route)
+👥 Anggota Kelompok
 
-Website menyediakan beberapa endpoint dengan metode GET sebagai berikut:
+No.| Nama| NIM
+1| Abu Nur Al-Faruq| 20220040223
+2| Abdul Wahab Rohmatullah| 20250040181
+3| Adam Rifaldi| 20250040134
+4| Adinda Anggraena Saputri| 20250040014
 
-No. Method Endpoint Fungsi
-1 GET "/" Mengarahkan pengguna ke halaman beranda
-2 GET "/beranda" Menampilkan halaman sambutan
-3 GET "/identitas" Menampilkan identitas kelompok
-4 GET "/matkul" Menampilkan identitas mata kuliah
-5 GET "/anggota" Menampilkan daftar anggota kelompok
-6 GET "/tentang" Menampilkan informasi website
-7 GET "/api/kelompok" Menampilkan data kelompok dalam format JSON
+🛠️ Teknologi yang Digunakan
 
-Website juga menyediakan penanganan error 404 untuk alamat halaman yang tidak ditemukan.
+- Node.js sebagai runtime JavaScript untuk menjalankan server.
+- Express.js sebagai framework untuk mengelola server dan routing.
+- JavaScript sebagai bahasa pemrograman.
+- HTML untuk menyusun struktur halaman.
+- CSS untuk mengatur tampilan halaman web.
+- npm untuk mengelola dependensi proyek.
 
-7. Struktur Folder Project
+🚀 Fitur dan Endpoint
+
+Aplikasi menyediakan beberapa endpoint dengan metode GET:
+
+Method| Endpoint| Fungsi
+GET| "/"| Mengarahkan pengguna ke halaman beranda.
+GET| "/beranda"| Menampilkan halaman sambutan.
+GET| "/identitas"| Menampilkan identitas kelompok.
+GET| "/matkul"| Menampilkan informasi mata kuliah.
+GET| "/anggota"| Menampilkan daftar anggota kelompok.
+GET| "/tentang"| Menampilkan informasi website.
+GET| "/api/kelompok"| Menampilkan data kelompok dalam format JSON.
+
+Aplikasi juga memiliki penanganan 404 Not Found untuk alamat atau endpoint yang tidak tersedia.
+
+📂 Struktur Folder
 
 webserver-kelompok/
-│
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 ├── server.js
 └── README.md
 
-8. Cara Menjalankan Project
+💻 Cara Menjalankan Proyek
 
-Pastikan Node.js dan npm sudah terinstal pada komputer.
+Pastikan Node.js dan npm sudah terpasang di komputer.
 
-Langkah 1. Clone Repository
+1. Clone repository
 
 git clone https://github.com/AlfaruqTi22E/webserver-kelompok.git
 
-Langkah 2. Masuk ke Folder Project
+2. Masuk ke direktori proyek
 
 cd webserver-kelompok
 
-Langkah 3. Install Dependencies
+3. Install dependencies
 
 npm install
 
-Langkah 4. Jalankan Web Server
+4. Jalankan server
 
 npm start
 
-Langkah 5. Akses Website
-
-Buka browser dan masukkan alamat berikut:
+5. Buka aplikasi di browser
 
 http://localhost:3000
 
-Server akan mengarahkan pengguna ke halaman beranda.
+Jika server berhasil dijalankan, aplikasi dapat diakses melalui alamat tersebut.
 
-9. Pengujian Endpoint
+🧪 Pengujian Endpoint
 
-Pengujian dilakukan dengan mengakses setiap endpoint melalui browser setelah server berhasil dijalankan.
+Setelah server aktif, setiap endpoint dapat diuji melalui browser menggunakan alamat berikut:
 
-Daftar alamat pengujian:
+- http://localhost:3000/beranda
+- http://localhost:3000/identitas
+- http://localhost:3000/matkul
+- http://localhost:3000/anggota
+- http://localhost:3000/tentang
+- http://localhost:3000/api/kelompok
 
-1. http://localhost:3000/beranda
-2. http://localhost:3000/identitas
-3. http://localhost:3000/matkul
-4. http://localhost:3000/anggota
-5. http://localhost:3000/tentang
-6. http://localhost:3000/api/kelompok
+Pengujian dilakukan untuk memastikan setiap halaman menampilkan informasi sesuai fungsinya dan endpoint API mengembalikan data kelompok dalam format JSON.
 
-Pengujian bertujuan memastikan setiap endpoint dapat berjalan sesuai fungsinya. Endpoint API diuji untuk memastikan data kelompok dapat ditampilkan dalam format JSON.
+🔗 Repository
 
-10. Repository GitHub
+Source code dan dokumentasi proyek tersedia di GitHub:
 
-Source code dan dokumentasi proyek dapat diakses melalui repository berikut:
-
-GitHub Repository:
-
-https://github.com/AlfaruqTi22E/webserver-kelompok
+"AlfaruqTi22E/webserver-kelompok" (https://github.com/AlfaruqTi22E/webserver-kelompok)
 
 ---
 
-Universitas Nusa Putra Sukabumi
-
+Universitas Nusa Putra
 Program Studi Teknik Informatika
-
 Mata Kuliah Pemrograman Berbasis Platform Web
