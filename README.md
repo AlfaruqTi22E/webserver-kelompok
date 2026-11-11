@@ -1,51 +1,59 @@
 Web Server Kelompok 1
 
+Project Tugas Pemrograman Berbasis Platform Web
+
 1. Deskripsi Proyek
 
 Web Server Kelompok 1 merupakan proyek tugas mata kuliah Pemrograman Berbasis Platform Web. Website ini dikembangkan menggunakan Node.js dan Express.js untuk menampilkan informasi kelompok, identitas mata kuliah, daftar anggota, serta informasi website melalui beberapa endpoint (route).
 
 2. Teknologi yang Digunakan
 
-- Node.js
-- Express.js
-- JavaScript
-- HTML
-- CSS
+- Node.js: Runtime JavaScript untuk menjalankan server.
+- Express.js: Framework untuk mengelola server dan routing.
+- JavaScript: Bahasa pemrograman yang digunakan.
+- HTML: Membuat struktur halaman website.
+- CSS: Mengatur tampilan dan desain website.
 
 3. Identitas Kelompok
 
-Keterangan| Informasi
-Nama Kelompok| Kelompok 1
-Kelas| TI25G
-Program Studi| Teknik Informatika
-Universitas| Universitas Nusa Putra
+Keterangan Informasi
+Nama Kelompok Kelompok 1
+Kelas TI25G
+Program Studi Teknik Informatika
+Universitas Universitas Nusa Putra
 
 4. Daftar Anggota Kelompok
 
-No.| Nama| NIM
-1| Abu Nur Al-Faruq| 20220040223
-2| Abdul Wahab Rohmatullah| 20250040181
-3| Adam Rifaldi| 20250040134
-4| Adinda Anggraena Saputri| 20250040014
+No. Nama NIM
+1 Abu Nur Al-Faruq 20220040223
+2 Abdul Wahab Rohmatullah 20250040181
+3 Adam Rifaldi 20250040134
+4 Adinda Anggraena Saputri 20250040014
 
 5. Identitas Mata Kuliah
 
-Keterangan| Informasi
-Mata Kuliah| Pemrograman Berbasis Platform Web
-Materi| Node.js dan Express.js
+Keterangan Informasi
+Mata Kuliah Pemrograman Berbasis Platform Web
+Dosen Pengampu Shintya Ayuningtias, M.Kom
+Materi Node.js dan Express.js
+Semester| 3
 
 6. Daftar Endpoint (Route)
 
-No.| Method| Endpoint| Fungsi
-1| GET| "/"| Halaman utama / pengalihan ke beranda
-2| GET| "/beranda"| Menampilkan halaman sambutan
-3| GET| "/identitas"| Menampilkan identitas kelompok
-4| GET| "/matkul"| Menampilkan identitas mata kuliah
-5| GET| "/anggota"| Menampilkan daftar anggota kelompok
-6| GET| "/tentang"| Menampilkan informasi tentang website
-7| GET| "/api/kelompok"| Menampilkan data kelompok dalam format JSON
+Website menyediakan beberapa endpoint dengan metode GET sebagai berikut:
 
-7. Struktur Folder
+No. Method Endpoint Fungsi
+1 GET "/" Mengarahkan pengguna ke halaman beranda
+2 GET "/beranda" Menampilkan halaman sambutan
+3 GET "/identitas" Menampilkan identitas kelompok
+4 GET "/matkul" Menampilkan identitas mata kuliah
+5 GET "/anggota" Menampilkan daftar anggota kelompok
+6 GET "/tentang" Menampilkan informasi website
+7 GET "/api/kelompok" Menampilkan data kelompok dalam format JSON
+
+Website juga menyediakan penanganan error 404 untuk alamat halaman yang tidak ditemukan.
+
+7. Struktur Folder Project
 
 webserver-kelompok/
 │
@@ -55,9 +63,9 @@ webserver-kelompok/
 ├── server.js
 └── README.md
 
-8. Cara Menjalankan Website
+8. Cara Menjalankan Project
 
-Pastikan Node.js sudah terinstal pada komputer.
+Pastikan Node.js dan npm sudah terinstal pada komputer.
 
 Langkah 1. Clone Repository
 
@@ -75,15 +83,19 @@ Langkah 4. Jalankan Web Server
 
 npm start
 
-Langkah 5. Buka Website
+Langkah 5. Akses Website
 
-Akses alamat berikut melalui browser:
+Buka browser dan masukkan alamat berikut:
 
 http://localhost:3000
 
+Server akan mengarahkan pengguna ke halaman beranda.
+
 9. Pengujian Endpoint
 
-Setelah server berhasil dijalankan, lakukan pengujian melalui browser menggunakan alamat berikut:
+Pengujian dilakukan dengan mengakses setiap endpoint melalui browser setelah server berhasil dijalankan.
+
+Daftar alamat pengujian:
 
 1. http://localhost:3000/beranda
 2. http://localhost:3000/identitas
@@ -92,17 +104,20 @@ Setelah server berhasil dijalankan, lakukan pengujian melalui browser menggunaka
 5. http://localhost:3000/tentang
 6. http://localhost:3000/api/kelompok
 
-Setiap endpoint menampilkan informasi sesuai dengan fungsi masing-masing. Endpoint API menampilkan data kelompok dalam format JSON.
+Pengujian bertujuan memastikan setiap endpoint dapat berjalan sesuai fungsinya. Endpoint API diuji untuk memastikan data kelompok dapat ditampilkan dalam format JSON.
 
 10. Repository GitHub
 
 Source code dan dokumentasi proyek dapat diakses melalui repository berikut:
 
-GitHub:
+GitHub Repository:
+
 https://github.com/AlfaruqTi22E/webserver-kelompok
 
 ---
 
-Universitas Nusa Putra
+Universitas Nusa Putra Sukabumi
+
 Program Studi Teknik Informatika
+
 Mata Kuliah Pemrograman Berbasis Platform Web
