@@ -39,7 +39,7 @@ const kelompok = {
 
 const matkul = {
     nama: "Pemrograman Berbasis Platform Web",
-    dosen: "Shintya Ayuningtias, M.Kom",
+    dosen: "Shinta Ayuningtias, M.Kom",
     materi: "Node.js dan Express.js",
     semester: "Semester 3"
 };
